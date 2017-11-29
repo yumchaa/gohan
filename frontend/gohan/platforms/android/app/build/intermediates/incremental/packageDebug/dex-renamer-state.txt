@@ -1,0 +1,4 @@
+#Wed Nov 22 22:15:29 JST 2017
+base.0=/Users/a14346/Dev/Front-End/gohan/frontend/gohan/platforms/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/a14346/Dev/Front-End/gohan/frontend/gohan/platforms/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
