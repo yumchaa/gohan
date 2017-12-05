@@ -135,6 +135,11 @@ const webConfig = {
                 el.styleBinding = `$processStyle(${el.styleBinding})`
               }
             }
+          ],
+          postcss: [
+            require('autoprefixer')({
+              browsers: ['last 2 versions', 'IE 11']
+            })
           ]
         }
       }
