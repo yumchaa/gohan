@@ -2,12 +2,12 @@ who	cuisine	genre	purpose	hotorcold	taste	materials	when	color	is_standard	url
 2	親子丼	japanese	main	hot	salty,sweet	rice,meat	lunch,dinner	yellow,green,white	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/89/00/89/rc234x174_1209090546_ea8ef861fa007bf83a810b3c6fc9a589.jpg
 2	玉子焼き	japanese	side	hot	salty,sweet	NULL	breakfast	yellow	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/90/00/90/rc234x174_1209090617_e73e7d03237e70e759dfd90c84c24733.jpg
 2	鶏のから揚げ	japanese	side	hot	salty	meat	lunch,dinner	brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/91/00/91/rc234x174_1209091011_6722e12fa22673b3f1afb583c653d71e.jpg
-0	肉じゃが	japanese	side	hot	saily,sweet	meat,vegetable	dinner	brown,green,red	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/95/00/95/rc234x174_1209140727_8e07f0cac6be1fd35c46b3f1362f01c8.jpg
+0	肉じゃが	japanese	side	hot	salty,sweet	meat,vegetable	dinner	brown,green,red	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/95/00/95/rc234x174_1209140727_8e07f0cac6be1fd35c46b3f1362f01c8.jpg
 1	天ぷら	japanese	side	hot	salty	fish,vegetable	lunch,dinner	yellow,red,green	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/96/00/96/rc234x174_1209101254_a36da1057803edf114a64f5577312f10.jpg
 2	きんぴら	japanese	side	hot	salty,spicy	vegetable	lunch,dinner	brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/97/00/97/rc234x174_1209100104_35e456fb47a0b7c6d061ce61f8c3b01d.jpg
 0	鶏の照り焼き	japanese	side	hot	salty,sweet	meat	dinner	brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/98/00/98/rc234x174_1209100139_b5b0dc953a5c5fdb1927a85488d70c9c.jpg
 2	五目炊き込みごはん	japanese	main	hot	salty	rice	dinner	brown,white	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/47/01/147/rc234x174_1209130110_33f506fac8475c71df52116439c391c4.jpg
-0	筍ごはん	japanese	main	hot	daily,salty,bitter	rice	dinner	yellow	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/48/01/148/rc234x174_1304031027_59d04c61fad206b6dfaeb1086311a75f.jpg
+0	筍ごはん	japanese	main	hot	salty,bitter	rice	dinner	yellow	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/48/01/148/rc234x174_1304031027_59d04c61fad206b6dfaeb1086311a75f.jpg
 2	おでん	japanese	main	hot	salty	vegetable	dinner	brown,white	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/49/01/149/rc234x174_1209130113_73dc9aa8f6b508a75a4c37154864d8ef.jpg
 1	すき焼き	japanese	side	hot	sweet	meat,vegetable	lunch,dinner	red,brown,white,green	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/50/01/150/rc234x174_1209130115_fc7be4142f59e9ab11a8a92e472114b0.jpg
 0	切り干し大根の煮物	japanese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/51/01/151/rc234x174_1209130243_de5609b517e1c2163659042a22109303.jpg
@@ -17,7 +17,7 @@ who	cuisine	genre	purpose	hotorcold	taste	materials	when	color	is_standard	url
 0	生姜焼き	japanese	side	hot	salty	meat	lunch,dinner	brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/55/01/155/rc234x174_1209130248_7ee7f5db56c509f6bbe672760147c960.jpg
 1	牛丼	japanese	main	hot	sweet	meat,rice	lunch,dinner	brown,red,white	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/56/01/156/rc234x174_1209130250_1a77769fc2cb94c904b008951465540c.jpg
 0	「日本の郷土料理！」筑前煮！煮しめ！がめ煮！	japanese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/57/01/157/rc234x174_1209130251_72f2a6a263a7251f9829f7347382faa7.jpg
-0	さといもの煮ころがし	japanese	side	hot	salty,sweet	vegetable 	dinner	white,brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/36/02/236/rc234x174_1209131116_0d1d4fd3bb1ea80bd84f59f21abacaa8.jpg
+0	さといもの煮ころがし	japanese	side	hot	salty,sweet	vegetable	dinner	white,brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/36/02/236/rc234x174_1209131116_0d1d4fd3bb1ea80bd84f59f21abacaa8.jpg
 2	ぬた和え	japanese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/37/02/237/rc234x174_1209180325_681ba34db1dbd9a5892d43ae367b08fa.jpg
 0	ふろふき大根　そぼろあんかけ	japanese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/38/02/238/rc234x174_1209180303_f65e80607e7e9817eb1d16ffe5545bb9.jpg
 2	肉豆腐	japanese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/39/02/239/rc234x174_1209131141_8786fd05579c71517930b1a8f8d9a96e.jpg
@@ -26,9 +26,9 @@ who	cuisine	genre	purpose	hotorcold	taste	materials	when	color	is_standard	url
 0	卯の花	japanese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/69/04/469/rc234x174_1209180338_3b8f40b94e422cee35ccc8f1c21cb5db.jpg
 0	三色丼	japanese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/70/04/470/rc234x174_1209180343_55474d5fb0b5e3d8fef8b98cb862b7ab.jpg
 1	イカ大根	japanese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/71/04/471/rc234x174_1209180342_b622d0885a19e478081921089b699b88.jpg
-0	ほうれん草のごまあえ	japanese	side	cold	bitter,salty,sweet	vegetable 	breakfast,dinner	green,brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/72/04/472/rc234x174_1209180341_fea4b22fa2191fef9e3573c445b7e464.jpg
+0	ほうれん草のごまあえ	japanese	side	cold	bitter,salty,sweet	vegetable	breakfast,dinner	green,brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/72/04/472/rc234x174_1209180341_fea4b22fa2191fef9e3573c445b7e464.jpg
 1	カレイの煮付け	japanese	side	hot	sweet	fish	lunch,dinner	brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/73/04/473/rc234x174_1209180340_d9fce07dcb9419ba18bd7d1e9b6717bd.jpg
-0	豚汁	japanese	side	hot	salty	meat,vegetable 	dinner	brown,red	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/74/04/474/rc234x174_1209180339_722bbd0bd61d2cfc3691fa4ff58e8921.jpg
+0	豚汁	japanese	side	hot	salty	meat,vegetable	dinner	brown,red	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/74/04/474/rc234x174_1209180339_722bbd0bd61d2cfc3691fa4ff58e8921.jpg
 1	鶏の竜田揚げ	japanese	side	hot	salty	meat	lunch,dinner	brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/75/04/475/rc234x174_1209180338_53a6a09cdb06bf09648d0e75f5658b26.jpg
 1	鯵の南蛮漬け	japanese	side	hot	sour,spicy	fish,vegetable	lunch,dinner	gray,green,red,yellow	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/76/04/476/rc234x174_1209211013_978a3de7b79758905d8678e89159ce96.jpg
 1	恵方巻き（太巻き）	japanese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/09/29/2909/rc234x174_1501290455_c6a3f8e980162e12d4fe33faadc2e0de.jpg
@@ -92,10 +92,10 @@ who	cuisine	genre	purpose	hotorcold	taste	materials	when	color	is_standard	url
 1	エビフライ	western	side	hot	salty	fish	lunch,dinner	red,brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/09/01/109/rc234x174_1209211010_de2ea37ed951ef5726e13e2e9ebbcbc8.jpg
 1	ローストビーフ	western	side	cold	sweet,salty	meat	dinner	red,brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/10/01/110/rc234x174_1209241056_7c3d8fc47ed52fdf4a69db3d9d56e07a.jpg
 1	コールスロー	western							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/11/01/111/rc234x174_1209211011_9936da008efc6121e05ab1c94f5c9a8c.jpg
-1	ポテトサラダ	western	side	cold	spicy,sweet,saily,sour	vegetable	lunch,dinner	white,yellow,green,red	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/23/01/123/rc234x174_1209110909_979882c475f2bcde3fd7920d65aef688.jpg
+1	ポテトサラダ	western	side	cold	spicy,sweet,salty,sour	vegetable	lunch,dinner	white,yellow,green,red	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/23/01/123/rc234x174_1209110909_979882c475f2bcde3fd7920d65aef688.jpg
 1	マカロニグラタン	western	side	hot	sweet,salty	NULL	lunch,dinner	white	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/24/01/124/rc234x174_1209110910_afd35d72b1337cfc18ba477590a65b04.jpg
 0	ビーフポテトコロッケ	western							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/25/01/125/rc234x174_1209110912_0fa7e481bce97d46e9d536b0cf9cff54.jpg
-0	ロールキャベツ	western	side	hot	salty	meat,vegetable 	dinner	green,brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/26/01/126/rc234x174_1209110913_c861298bd4b883f5653a60d61cad7ddf.jpg
+0	ロールキャベツ	western	side	hot	salty	meat,vegetable	dinner	green,brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/26/01/126/rc234x174_1209110913_c861298bd4b883f5653a60d61cad7ddf.jpg
 2	ナポリタン	western	main	hot	salty,sweet	noodle	lunch,dinner	orange,green	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/27/01/127/rc234x174_1209110914_02e823a2ef8edd366934c487224a8a49.jpg
 2	エビピラフ	western	main	hot	salty,spicy	rice	lunch,dinner	white,pink	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/28/01/128/rc234x174_1209110915_06aa6e84eeab4cd05425eb47b3430266.jpg
 2	ハンバーグステーキ	western							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/29/01/129/rc234x174_1209110916_aac169e9d6308f2705c54bfacbcfc02d.jpg
@@ -126,14 +126,14 @@ who	cuisine	genre	purpose	hotorcold	taste	materials	when	color	is_standard	url
 1	バカリャウ・ア・ブラーシュ（塩ダラのスクランブルエッグ）	western							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/63/50/5063/rc234x174_1705151804_457919a3b42375417212d951454032c3.jpg
 0	にんじんのポタージュ	western							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/47/50/5047/rc234x174_1704211437_ff34618234bafaeb07d3a260ca6f4f50.jpg
 0	エビチリ	chinese	side	hot	sweet,salty,spicy	fish	lunch,dinner	red	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/99/00/99/rc234x174_1209100818_21faaa88dd8b646649ea58c5eb4c1a62.jpg
-2	酢豚	chinese	side	hot	sweet,salty	meet	dinner	brown,red,green	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/00/01/100/rc234x174_1209100828_307a89b0162d2dac4db74062cd910836.jpg
+2	酢豚	chinese	side	hot	sweet,salty	meat	dinner	brown,red,green	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/00/01/100/rc234x174_1209100828_307a89b0162d2dac4db74062cd910836.jpg
 0	あんかけ かに玉	chinese	side	hot	salty,sweet,sour	NULL	lunch,dinner	yellow,green	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/01/01/101/rc234x174_1211280546_c806949f3e0a5916bf6001c013b704d8.jpeg
 1	サンラータン	chinese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/03/01/103/rc234x174_1209100840_6e100ea5c57b4f327af79ee304b95dd6.jpg
 1	にらたま	chinese	side	hot	salty,sweet	vegetable	lunch,dinner	yellow,green	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/04/01/104/rc234x174_1209100842_e892d74c5aa123f37ac09bbf055d7764.jpg
 2	チャーハン	chinese	main	hot	salty,spicy	rice	lunch,dinner	brown,yellow,red	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/05/01/105/rc234x174_1209100850_d5aad63e2acea1ea936178c6bc542933.jpg
-1	青椒肉絲（チンジャオロース）	chinese	side	hot	salty	meat,vegetable	lunch,dinner 	green,brown,yellow	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/06/01/106/rc234x174_1209100852_6abbf624769f61bc3b1df0f15cb8b67a.jpg
-0	坦々麺	chinese	main	hot	spicy,salty	noodle	lunch,dinner 	red,white,green,yellow	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/07/01/107/rc234x174_1209100855_a99c55991173a7e4be38ac98f0ebcf9e.jpg
-1	豚の角煮	chinese	side	hot	sweet	meat	lunch,dinner 	brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/26/04/426/rc234x174_1209171230_936401608c5febf77c28b9fd612bfddf.jpg
+1	青椒肉絲（チンジャオロース）	chinese	side	hot	salty	meat,vegetable	lunch,dinner	green,brown,yellow	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/06/01/106/rc234x174_1209100852_6abbf624769f61bc3b1df0f15cb8b67a.jpg
+0	坦々麺	chinese	main	hot	spicy,salty	noodle	lunch,dinner	red,white,green,yellow	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/07/01/107/rc234x174_1209100855_a99c55991173a7e4be38ac98f0ebcf9e.jpg
+1	豚の角煮	chinese	side	hot	sweet	meat	lunch,dinner	brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/26/04/426/rc234x174_1209171230_936401608c5febf77c28b9fd612bfddf.jpg
 1	紅油水餃～ホンユースイジャオ～（水餃子）	chinese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/27/04/427/rc234x174_1209171239_c815209c77765ade2f2a9f273426f9ae.jpg
 1	棒々鶏 （バンバンジー)	chinese	side	cold	sweet,sour	meat,vegetable	lunch,dinner	white,green,red	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/29/04/429/rc234x174_1209171247_9db365d2c3caa3acb6b3779e27cb273b.jpg
 1	冷やし中華	chinese	main	cold	sour,sweet	noodle,vegetable	lunch,dinner	yellow,green,red	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/33/04/433/rc234x174_1209170107_59d000c9a35b470a54334cf12cff2e86.jpg
@@ -143,11 +143,11 @@ who	cuisine	genre	purpose	hotorcold	taste	materials	when	color	is_standard	url
 0	卵スープ	chinese	side	hot	salty	NULL	breakfast,lunch,dinner	yellow,white	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/48/04/448/rc234x174_1209170200_1d6d0398c06451d402ae30d2263a4ede.jpg
 1	麻婆豆腐	chinese	side	hot	spicy	meat	lunch,dinner	red,white,brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/66/04/466/rc234x174_1209170415_36911406347e9d36b18965518ea76392.jpg
 1	回鍋肉 （ホイコーロー）	chinese	side	hot	sweet,salty	meat,vegetable	lunch,dinner	brown,green	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/67/04/467/rc234x174_1209170416_9bf08dfc05b7fb578b8a704fc50d3689.jpg
-0	焼きそば	chinese	main	hot	salty	noodle,vegetable 	lunch,dinner 	brown,red,yellow	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/68/04/468/rc234x174_1209170417_fa1a0137b2c9445d070c092e5eb569e5.jpg
+0	焼きそば	chinese	main	hot	salty	noodle,vegetable	lunch,dinner	brown,red,yellow	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/68/04/468/rc234x174_1209170417_fa1a0137b2c9445d070c092e5eb569e5.jpg
 1	白身魚の姿蒸し	chinese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/85/04/485/rc234x174_1209211006_589f8f75190d66e715ed7a5307be2cac.jpg
 2	イカのミルク炒め	chinese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/88/04/488/rc234x174_1209190433_805f8a55fd851072f4a69cf321b1f4e9.jpg
 1	麻婆春雨	chinese	side	hot	spicy	meat	lunch,dinner	brown,red	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/90/04/490/rc234x174_1209190437_767498fa35a7f33644f5f3da723e3abc.jpg
-0	麻婆茄子	chinese	side	hot	spicy,salty	vegetable 	lunch,dinner	red,brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/56/33/3356/rc234x174_1508110259_4a215f308b06573485a974f94dcbe69d.jpg
+0	麻婆茄子	chinese	side	hot	spicy,salty	vegetable	lunch,dinner	red,brown	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/56/33/3356/rc234x174_1508110259_4a215f308b06573485a974f94dcbe69d.jpg
 0	鶏とカシューナッツのピリ辛炒め	chinese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/57/33/3357/rc234x174_1508110304_d8ad6b12449ea207d64e80247c25e969.jpg
 1	chineseちまき（粽子）	chinese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/10/42/4210/rc234x174_1604181741_0dad2c788d3be3d6fc888a5e405690c9.jpg
 2	XO醤と彩色野菜のchinese焼きそば	chinese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/19/42/4219/rc234x174_1605101347_5ed2bbb9371dd48545b5f26e5af91c44.jpg
@@ -162,7 +162,7 @@ who	cuisine	genre	purpose	hotorcold	taste	materials	when	color	is_standard	url
 0	冬瓜燉鶏翼（広東風 冬瓜と鶏手羽元の薬膳蒸しスープ）	chinese							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/23/50/5023/rc234x174_1705121215_37025fe1c2a239a8610c4add6b523403.jpg
 2	テリーヌ	french							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/12/01/112/rc234x174_1209100922_4afe428b9b15f4f037b3a125b8f5c0a1.jpg
 1	ムニエル	french	side	hot	salty,sweet	fish	lunch,dinner	white	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/15/01/115/rc234x174_1209110247_0d1f8b414df9de9eb09a0a7ce44fa93a.jpg
-2	ビーフシチュー	french	side	hot	salty	meet	dinner	black	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/16/01/116/rc234x174_1209110250_849922c67c88e1cb7d55c3f50460848f.jpg
+2	ビーフシチュー	french	side	hot	salty	meat	dinner	black	TRUE	https://c-chefgohan.gnst.jp/imgdata/recipe/16/01/116/rc234x174_1209110250_849922c67c88e1cb7d55c3f50460848f.jpg
 0	コーンポタージュ	french							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/17/01/117/rc234x174_1209110251_3d86ed10c099f111f71d81d38c2030b2.jpg
 2	ビーフストロガノフ	french							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/18/01/118/rc234x174_1209110302_eb72741d03cabc05b54edaa6c4c7b110.jpg
 2	かぼちゃの冷製クリームスープ	french							FALSE	https://c-chefgohan.gnst.jp/imgdata/recipe/19/01/119/rc234x174_1209110306_5f76d59b4b1488424ffa3e9dc2623047.jpg
