@@ -34,14 +34,15 @@
 </style>
 
 <script>
+import axios from 'axios'
 import { WxcButton } from 'weex-ui'
 
 module.exports = {
   components: { WxcButton },
   data: () => ({
-    question: 'Q ジャンルは？',
-    answerFirst: '和風にする',
-    answerSecond: '和風以外にする',
+    question: '',
+    answerFirst: '',
+    answerSecond: '',
     answerTextStyle: {
       color: 'white'
     },
@@ -50,6 +51,18 @@ module.exports = {
       backgroundColor: 'green'
     }
   }),
+  created: function() {
+    axios
+      .get('http://localhost:3000/api')
+      .then(res => {
+        this.question = res.data.question
+        this.answerFirst = res.data.answerFirst
+        this.answerSecond = res.data.answerSecond
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  },
   methods: {
     answerClicked(selected) {
       console.log(selected)
