@@ -95,8 +95,7 @@ const plugins = [
 // Config for compile jsbundle for web.
 const webConfig = {
   context: pathTo.join(__dirname, ''),
-  // entry: entry,
-  entry: './temp/index.js?entry=true',
+  entry: entry,
   output: {
     path: pathTo.join(__dirname, 'dist'),
     filename: '[name].web.js'
@@ -155,8 +154,7 @@ const webConfig = {
 }
 // Config for compile jsbundle for native.
 const weexConfig = {
-  // entry: weexEntry,
-  entry: './src/index.vue?entry=true',
+  entry: weexEntry,
   output: {
     path: pathTo.join(__dirname, 'dist'),
     filename: '[name].js'
