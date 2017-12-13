@@ -2,4 +2,4 @@ honcho
 Flask
 scikit-learn
 gunicorn
-
+pandas
