@@ -155,6 +155,7 @@ const webConfig = {
 // Config for compile jsbundle for native.
 const weexConfig = {
   entry: weexEntry,
+  //entry: './src/index.vue?entry=true',
   output: {
     path: pathTo.join(__dirname, 'dist'),
     filename: '[name].js'
