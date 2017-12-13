@@ -1,5 +1,5 @@
 <template>
-　<div class="wrapper">
+　<div>
     <text class="question">{{ question }}</text>
     <div class="answerBtnGrp">
       <wxc-button
@@ -16,17 +16,12 @@
       </wxc-button>
     </div>
     <div>
-      <cuisins v-bind:results="results"></cuisins>
+      <cuisins :results="results"></cuisins>
     </div>
 　</div>
 </template>
 
 <style scoped lang="stylus">
-.wrapper {
-  justify-content: center;
-  align-items: center;
-}
-
 .question {
   text-align: center;
   margin-bottom: 20px;
@@ -41,7 +36,7 @@
 </style>
 
 <script>
-import axios from 'axios'
+import axios from 'weex-axios'
 import { WxcButton } from 'weex-ui'
 import Cuisins from './cuisins.vue'
 
@@ -51,65 +46,16 @@ module.exports = {
     question: '',
     answerFirst: '',
     answerSecond: '',
+    results: [],
     answerTextStyle: {
-      color: 'white'
+      color: 'white',
+      height: '150px',
+      lineHeight: '150px'
     },
     answerBtnStyle: {
-      width: '300%',
+      width: '300px',
       backgroundColor: 'green'
-    },
-    results: [
-      {
-        name: '料理1',
-        image:
-          'https://gw.alicdn.com/tfs/TB1788ygMMPMeJjy1XdXXasrXXa-1919-1520.jpg'
-      },
-      {
-        name: '料理2',
-        image:
-          'http://img.alicdn.com/imgextra/i4/283601870/TB2SapQXBjkJKJjSspfXXc2tXXa_!!283601870-0-beehive-scenes.jpg'
-      },
-      {
-        name: '料理3',
-        image:
-          'https://gw.alicdn.com/tfs/TB1788ygMMPMeJjy1XdXXasrXXa-1919-1520.jpg'
-      },
-      {
-        name: '料理4',
-        image:
-          'http://img.alicdn.com/imgextra/i4/283601870/TB2SapQXBjkJKJjSspfXXc2tXXa_!!283601870-0-beehive-scenes.jpg'
-      },
-      {
-        name: '料理5',
-        image:
-          'https://gw.alicdn.com/tfs/TB1788ygMMPMeJjy1XdXXasrXXa-1919-1520.jpg'
-      },
-      {
-        name: '料理6',
-        image:
-          'http://img.alicdn.com/imgextra/i4/283601870/TB2SapQXBjkJKJjSspfXXc2tXXa_!!283601870-0-beehive-scenes.jpg'
-      },
-      {
-        name: '料理7',
-        image:
-          'https://gw.alicdn.com/tfs/TB1788ygMMPMeJjy1XdXXasrXXa-1919-1520.jpg'
-      },
-      {
-        name: '料理8',
-        image:
-          'http://img.alicdn.com/imgextra/i4/283601870/TB2SapQXBjkJKJjSspfXXc2tXXa_!!283601870-0-beehive-scenes.jpg'
-      },
-      {
-        name: '料理9',
-        image:
-          'https://gw.alicdn.com/tfs/TB1788ygMMPMeJjy1XdXXasrXXa-1919-1520.jpg'
-      },
-      {
-        name: '料理10',
-        image:
-          'http://img.alicdn.com/imgextra/i4/283601870/TB2SapQXBjkJKJjSspfXXc2tXXa_!!283601870-0-beehive-scenes.jpg'
-      }
-    ]
+    }
   }),
   created: function() {
     axios
@@ -118,6 +64,7 @@ module.exports = {
         this.question = res.data.question
         this.answerFirst = res.data.answerFirst
         this.answerSecond = res.data.answerSecond
+        this.results = res.data.results
       })
       .catch(err => {
         console.error(err)
