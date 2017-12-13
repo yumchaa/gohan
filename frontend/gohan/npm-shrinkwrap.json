@@ -8353,6 +8353,14 @@
             "integrity": "sha1-domUmcGEtu91Q3fC27DNbLVdKec=",
             "dev": true
         },
+        "weex-axios": {
+            "version": "0.16.4",
+            "resolved": "https://registry.npmjs.org/weex-axios/-/weex-axios-0.16.4.tgz",
+            "integrity": "sha1-KK+gkyQ49J1qGmLpUILE2lYGNIo=",
+            "requires": {
+                "follow-redirects": "1.2.6"
+            }
+        },
         "weex-html5": {
             "version": "0.4.1",
             "resolved": "http://registry.npm.taobao.org/weex-html5/download/weex-html5-0.4.1.tgz",
