@@ -4,7 +4,7 @@ from flask import Flask, redirect, url_for, request, jsonify
 
 
 def create_app(config, debug=False, testing=False, config_overrides=None):
-    app = Flask(__name__, instance_relative_config=True)
+    app = Flask(__name__, instance_relative_config=True, static_folder=None)
     app.config.from_object(config)
     app.config.from_pyfile('development.py')
 

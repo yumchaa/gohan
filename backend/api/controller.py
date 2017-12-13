@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import logging
-from datetime import datetime
 
 from flask import Blueprint, jsonify, request, current_app as app
+
+from api.estimator import Estimator
 
 api = Blueprint('api', __name__)
 
@@ -18,3 +18,14 @@ def index():
             func_list[rule.rule] = app.view_functions[rule.endpoint].__doc__
     return jsonify(func_list)
 
+
+@api.route('/cuisines')
+def cuisines():
+    """find cuisines you want to eat potentially
+    """
+    node: int = request.args.get('node', 0)
+    answer: bool = request.args.get('answer', True)
+    estimator = Estimator()
+    result = estimator.n_selection(node=node, answer=answer)
+    print(result)
+    return jsonify(result)
