@@ -7,14 +7,14 @@
         :btnStyle="answerBtnStyle"
         :textStyle="answerTextStyle"
         :disabled="idDisabled"
-        @wxcButtonClicked="answerClicked(true, idDisabled)">
+        @wxcButtonClicked="answerClicked('True', idDisabled)">
       </wxc-button>
       <wxc-button
         text="いいえ"
         :btnStyle="answerBtnStyle"
         :textStyle="answerTextStyle"
         :disabled="idDisabled"
-        @wxcButtonClicked="answerClicked(false, idDisabled)">
+        @wxcButtonClicked="answerClicked('False', idDisabled)">
       </wxc-button>
     </div>
     <div>
