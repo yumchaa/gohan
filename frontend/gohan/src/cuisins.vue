@@ -4,7 +4,7 @@
     <scroller class="scroller">
       <div class="list">
         <div style="margin-top:30px;" v-for="(item, index) in results" :key="item.name">
-          <text :style="{ width }" @load="resize(item, index, $event)">{{item.target_name}}</text>
+          <text :style="{ width }" @load="resize(item, index, $event)">{{index}}:{{item.target_name}}</text>
           <image :style="{ width, height }" @load="resize(item, index, $event)" :src="item.url" />
         </div>
       </div>
@@ -32,7 +32,7 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  width:720px;
+  width: 720px;
 }
 </style>
 
