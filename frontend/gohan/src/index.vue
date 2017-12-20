@@ -6,13 +6,15 @@
         text="はい"
         :btnStyle="answerBtnStyle"
         :textStyle="answerTextStyle"
-        @wxcButtonClicked="answerClicked(true)">
+        :disabled="idDisabled"
+        @wxcButtonClicked="answerClicked(true, idDisabled)">
       </wxc-button>
       <wxc-button
         text="いいえ"
         :btnStyle="answerBtnStyle"
         :textStyle="answerTextStyle"
-        @wxcButtonClicked="answerClicked(false)">
+        :disabled="idDisabled"
+        @wxcButtonClicked="answerClicked(false, idDisabled)">
       </wxc-button>
     </div>
     <div>
@@ -45,6 +47,7 @@ module.exports = {
   data: () => ({
     node: 1,
     question: '',
+    idDisabled: false,
     results: [],
     answerTextStyle: {
       color: 'white',
@@ -68,7 +71,11 @@ module.exports = {
       })
   },
   methods: {
-    answerClicked(selected) {
+    answerClicked(selected, idDisabled) {
+      if (idDisabled) {
+        return
+      }
+
       axios
         .get(
           `http://gohan-backend.herokuapp.com/api/cuisines?node=${this
@@ -76,7 +83,12 @@ module.exports = {
         )
         .then(res => {
           this.node = res.data.node
-          this.question = res.data.selection.feature
+          if (res.data.selection) {
+            this.question = res.data.selection.feature
+          } else {
+            this.question = '終わり'
+            this.idDisabled = true
+          }
           this.results = res.data.now_candidates
         })
         .catch(err => {
