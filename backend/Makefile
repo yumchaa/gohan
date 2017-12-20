@@ -7,11 +7,24 @@ all: help
 
 .PHONY: build ## Build image
 build:
-	docker build . -t $(IMAGE):$(DATE)
+	docker build . -t $(IMAGE):$(DATE) -t $(IMAGE):latest
 
 .PHONY: run-dev ## Run server for development
 run-dev:
 	honcho start -f procfile api
+
+.PHONY: run-by-docker ## Run server on container by docker
+run-by-docker:
+	docker run -d --rm -p 8080:8080 -e PORT=8080 gohan-backend
+
+.PHONY: heroku-create ## Create application on heroku
+heroku-create:
+	heroku create $(IMAGE)
+
+.PHONY: push ## Push image to heroku
+push:
+	heroku container:login
+	heroku container:push --app $(IMAGE) web
 
 .PHONY: help ## View help
 help:
