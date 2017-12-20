@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.externals import joblib
 from sklearn.tree import DecisionTreeClassifier
 
-from api.utils import feature_names, target_names, flatten, softmax
+from api.utils import feature_names, target_names, flatten, softmax, load_data
 
 
 class Estimator:
@@ -14,10 +14,12 @@ class Estimator:
         if cls._instance is None:
             cls._instance = super().__new__(cls)
             # cls.model: DecisionTreeClassifier = joblib.load('static/model_cuisines.pkl.gz')
+            cls.cuisine_to_url = {row['cuisine']: row['url'] for row in
+                                  load_data()[['url']].reset_index().to_dict(orient='record')}
 
             import os
-            dir = os.path.dirname(os.path.abspath(__file__))
-            cls.model: DecisionTreeClassifier = joblib.load(dir + '/../static/model_cuisines.pkl.gz')
+            abs_dir = os.path.dirname(os.path.abspath(__file__))
+            cls.model: DecisionTreeClassifier = joblib.load(abs_dir + '/../static/model_cuisines.pkl.gz')
             tree = cls.model.tree_
             cls.left = tree.children_left
             cls.right = tree.children_right
@@ -70,9 +72,9 @@ class Estimator:
 
     def _class_names(self, node):
         return pd.DataFrame({
-            'target_names': target_names,
+            'target_name': target_names,
             'likelihood': flatten(softmax(self.value[node])),
-            'url': 'https://c-chefgohan.gnst.jp/imgdata/recipe/49/01/149/rc234x174_1209130113_73dc9aa8f6b508a75a4c37154864d8ef.jpg',
+            'url': [self.cuisine_to_url[name] for name in target_names],
         }).sort_values('likelihood', ascending=False).head(10).astype({
             'likelihood': str
         }).to_dict(orient='record')

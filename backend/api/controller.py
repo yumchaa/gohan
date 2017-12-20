@@ -27,5 +27,4 @@ def cuisines():
     answer: bool = request.args.get('answer', True)
     estimator = Estimator()
     result = estimator.n_selection(node=node, answer=answer)
-    print(result)
     return jsonify(result)

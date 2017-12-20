@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 from itertools import chain
 
-import pandas as pd
 import numpy as np
+import pandas as pd
 
 
-def load_data():
+def load_data() -> pd.DataFrame:
     return pd.read_csv(
         'static/chefgohan.tsv', sep='\t'
     ).drop(['who'], axis=1).set_index('cuisine').query('is_standard == True').fillna('')
