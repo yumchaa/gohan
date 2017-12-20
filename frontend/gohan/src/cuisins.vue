@@ -3,9 +3,9 @@
     <text class="content-title">料理一覧</text>
     <scroller class="scroller">
       <div class="list">
-        <div style="width: 300px" v-for="item in results" :key="item.name">
-          <text :style="{ width }" @load="resize">{{item.target_name}}</text>
-          <image :style="{ width, height }" @load="resize" :src="item.url" />
+        <div style="margin-top:30px;" v-for="(item, index) in results" :key="item.name">
+          <text :style="{ width }" @load="resize(item, index, $event)">{{item.target_name}}</text>
+          <image :style="{ width, height }" @load="resize(item, index, $event)" :src="item.url" />
         </div>
       </div>
     </scroller>
@@ -32,6 +32,7 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  width:720px;
 }
 </style>
 
@@ -49,12 +50,18 @@ module.exports = {
     height: 1
   }),
   methods: {
-    resize(event) {
+    resize(item, index, event) {
       if (event.success) {
         this.loading = false
         const ratio = event.size.naturalHeight / event.size.naturalWidth
-        this.width = Math.min(event.size.naturalWidth, 600) / 2
+        //this.width = Math.min(event.size.naturalWidth, 600) / 2
+        this.width = 700 / 2
         this.height = Math.min(this.width * ratio, 1000)
+
+        //return {
+        //  width: 700 / (index+1),
+        //  height: Math.min(this.width * ratio, 1000)
+        //}
       }
     }
   }
