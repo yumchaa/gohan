@@ -24,7 +24,7 @@ def cuisines():
     """find cuisines you want to eat potentially
     """
     node: int = request.args.get('node', 0)
-    answer: bool = request.args.get('answer', True)
+    answer: bool = True if request.args.get('answer', 'True') == 'True' else False
     estimator = Estimator()
     result = estimator.n_selection(node=node, answer=answer)
     return jsonify(result)
