@@ -4,8 +4,8 @@
     <scroller class="scroller">
       <div class="list">
         <div style="width: 300px" v-for="item in results" :key="item.name">
-          <text :style="{ width }" @load="resize">{{item.name}}</text>
-          <image :style="{ width, height }" @load="resize" :src="item.image" />
+          <text :style="{ width }" @load="resize">{{item.target_name}}</text>
+          <image :style="{ width, height }" @load="resize" :src="item.url" />
         </div>
       </div>
     </scroller>
