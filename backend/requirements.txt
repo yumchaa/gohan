@@ -1,5 +1,6 @@
-honcho
-Flask
-scikit-learn
-gunicorn
-pandas
+honcho>=1.0.1,<1.1.0
+Flask>=0.12.2,<0.13.0
+scikit-learn>=0.19.1,<0.20.0
+gunicorn>=19.7.1,<20.0.0
+pandas>=0.21.1,<0.22.0
+scipy>=1.0.0,<1.1.0
