@@ -7,3 +7,4 @@ platforms/ios/build/
 platforms/ios/bundlejs/
 platforms/ios/Pods/
 temp/
+platforms/ios/WeexDemo.xcodeproj/project.pbxproj
