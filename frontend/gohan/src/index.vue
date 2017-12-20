@@ -3,13 +3,13 @@
     <text class="question">{{ question }}</text>
     <div class="answerBtnGrp">
       <wxc-button
-        :text="answerFirst"
+        text="はい"
         :btnStyle="answerBtnStyle"
         :textStyle="answerTextStyle"
         @wxcButtonClicked="answerClicked(true)">
       </wxc-button>
       <wxc-button
-        :text="answerSecond"
+        text="いいえ"
         :btnStyle="answerBtnStyle"
         :textStyle="answerTextStyle"
         @wxcButtonClicked="answerClicked(false)">
@@ -43,9 +43,8 @@ import Cuisins from './cuisins.vue'
 module.exports = {
   components: { WxcButton, Cuisins },
   data: () => ({
+    node: 1,
     question: '',
-    answerFirst: '',
-    answerSecond: '',
     results: [],
     answerTextStyle: {
       color: 'white',
@@ -59,12 +58,10 @@ module.exports = {
   }),
   created: function() {
     axios
-      .get('http://localhost:3000/api')
+      .get('http://gohan-backend.herokuapp.com/api/cuisines')
       .then(res => {
-        this.question = res.data.question
-        this.answerFirst = res.data.answerFirst
-        this.answerSecond = res.data.answerSecond
-        this.results = res.data.results
+        this.question = res.data.selection.feature
+        this.results = res.data.now_candidates
       })
       .catch(err => {
         console.error(err)
@@ -72,7 +69,19 @@ module.exports = {
   },
   methods: {
     answerClicked(selected) {
-      console.log(selected)
+      axios
+        .get(
+          `http://gohan-backend.herokuapp.com/api/cuisines?node=${this
+            .node}&answer=${selected}`
+        )
+        .then(res => {
+          this.node = parseInt(res.data.node) + 1
+          this.question = res.data.selection.feature
+          this.results = res.data.now_candidates
+        })
+        .catch(err => {
+          console.error(err)
+        })
     }
   }
 }
