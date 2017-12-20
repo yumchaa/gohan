@@ -75,7 +75,7 @@ module.exports = {
             .node}&answer=${selected}`
         )
         .then(res => {
-          this.node = parseInt(res.data.node) + 1
+          this.node = res.data.node
           this.question = res.data.selection.feature
           this.results = res.data.now_candidates
         })
