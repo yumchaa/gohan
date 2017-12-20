@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import logging
-from flask import Flask, redirect, url_for, request, jsonify
+from flask import Flask, redirect, url_for, jsonify
+from flask_cors import CORS
 
 
 def create_app(config, debug=False, testing=False, config_overrides=None):
@@ -13,6 +13,8 @@ def create_app(config, debug=False, testing=False, config_overrides=None):
 
     if config_overrides:
         app.config.update(config_overrides)
+
+    CORS(app, resources={r"/api/*": {"origins": "*"}})
 
     # Setup the data model
     with app.app_context():
@@ -34,8 +36,7 @@ def create_app(config, debug=False, testing=False, config_overrides=None):
             'error': {
                 'code': 500,
                 'message': e.args,
-                }
-            }), 500
+            }
+        }), 500
 
     return app
-
