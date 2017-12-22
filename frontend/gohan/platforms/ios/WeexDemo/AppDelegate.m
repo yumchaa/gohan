@@ -12,6 +12,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import "WeexSDKManager.h"
 #import "WXScannerVC.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 @end
@@ -34,6 +36,8 @@
     [self startSplashScreen];
     
     [self checkUpdate];
+    
+    [Fabric with:@[[Crashlytics class]]];
     
     return YES;
 }

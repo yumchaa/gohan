@@ -283,6 +283,7 @@
 				775BEE791C1E8ECC008D1629 /* Resources */,
 				E06D2A27314FA9C4345ADF00 /* [CP] Embed Pods Frameworks */,
 				AB1B0F26FC72B3D92B4CCF21 /* [CP] Copy Pods Resources */,
+				42BA04F61FEC982100E64B74 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -421,6 +422,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "case \"$CONFIGURATION\" in\n  Debug)\n  # Speed up build times by skipping the creation of the offline package for debug\n  # builds on the simulator since the packager is supposed to be running anyways.\n    if [[ \"$PLATFORM_NAME\" == *simulator ]]; then\n      echo \"Skipping bundling for Simulator platform\"\n      exit 0;\n    fi\n\n    DEV=true\n    ;;\n  \"\")\n    echo \"$0 must be invoked by Xcode\"\n    exit 1\n    ;;\n  *)\n    DEV=false\n    ;;\nesac\n\nset -x\nDEST=$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\n\nif [[ \"$CONFIGURATION\" = \"Debug\" && ! \"$PLATFORM_NAME\" == *simulator ]];\nthen\n  PLISTBUDDY='/usr/libexec/PlistBuddy'\n  PLIST=$TARGET_BUILD_DIR/$INFOPLIST_PATH\n  IP=$(ipconfig getifaddr en0)\n  if [ -z \"$IP\" ]; then\n    IP=$(ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\\   -f2  | awk 'NR==1{print $1}')\n  fi\n  $PLISTBUDDY -c \"Add NSAppTransportSecurity:NSExceptionDomains:localhost:NSTemporaryExceptionAllowsInsecureHTTPLoads bool true\" \"$PLIST\"\n  $PLISTBUDDY -c \"Add NSAppTransportSecurity:NSExceptionDomains:$IP.xip.io:NSTemporaryExceptionAllowsInsecureHTTPLoads bool true\" \"$PLIST\"\n  echo $IP > \"$DEST/ip.txt\"\nfi\n\n";
+		};
+		42BA04F61FEC982100E64B74 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" e1a84ab5c26675f9d8ccfcfdba3d6da8c6005b27 14e79b995c5f69910ce37db8141be05db5d4646df90d8638470708dbde6c8524";
 		};
 		47FAE32FED2E78808CADC384 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
